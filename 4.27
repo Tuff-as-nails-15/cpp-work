@@ -1,0 +1,19 @@
+//Ian Cronizer 4.27 11/2/21
+#include<iostream>
+using namespace std;
+
+int main() 
+{
+	//Call and Define an int 
+	cout << "Please enter a 5 digit Integer: ";
+	int n,number,count = 0;
+	cin >> n;
+	//Check the first and the last int, if they dont match its not a palindrome
+	while (count <=5) 
+	{
+		number = n;
+		cout << number / 10000 << '\n';
+		cout << number % 10 << '\n';
+		count++;
+	}
+}
