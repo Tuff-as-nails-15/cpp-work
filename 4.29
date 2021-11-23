@@ -1,0 +1,16 @@
+//Ian Cronizer 4.29 11/2/21
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	//defining int 
+	int counter = 0;
+	//using only the three outputs, making a pattern that repeats 4 times
+	while (counter <= 3)
+	{
+		cout << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << endl;
+		cout << ' ' << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << endl;
+		counter++;
+	}
+}
