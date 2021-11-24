@@ -4,13 +4,15 @@ using namespace std;
 
 int main()
 {
-	double hours, counter;
+	double hours, hour;
 	cout << "Enter number of hours worked (-1 to end): ";
 	cin >> hours;
 	//making a while loop
-	while ()
+	while (hours != -1)
 	{
-		//count hours 
-	
+	hour = hours/10 +2;
+    cout << hour << '\n';
+	cout << "Enter number of hours worked (-1 to end): ";
+	cin >> hours;
 	}
 }
