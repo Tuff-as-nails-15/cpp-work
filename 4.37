@@ -9,18 +9,11 @@ int main()
 	cout << "Enter the 4 digit integer: ";
 	cin >> number;
 	//seperate each number the method of each is different, so it cant be looped.
-	number1 = number / 1000;
+	number1 = ((number / 1000;)+7)%10)
 	number2 = number % 1000 / 100;
 	number3 = number % 100 / 10;
 	number4 = number % 10;
-	for (int i = 0; i < 4; i++)
-	{
-		//this is the same for all of them, but now how do i call them.
-		//i feel like this is where an array would help.
-		number = number + 7;
-		number = number % 10;
-
-	}
 
 }
 //i just cant do this with a for loop, im absolutly stumped.
+//cout the same as number one and at the end switch the numbers around
