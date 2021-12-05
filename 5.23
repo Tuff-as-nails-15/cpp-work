@@ -1,0 +1,75 @@
+//Ian Cronizer 5.23 12/05/21
+#include<iostream>
+#include<iomanip>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    //Basic for loop for the first top 
+    for (int a = 1; a <= 9; a++)
+    {
+        cout << "# ";
+    }
+    cout << endl;
+            for (int a = 1; a <= 7; a++)
+            {
+                cout << "#";
+                //white space loop
+                for (int b = 1; b <= a; b++)
+                {
+                    cout << " ";
+                }
+                //Putting * second to make this one left sided
+                for (int b = a; b <= 6; b++)
+                {
+                    cout << "*";
+                }
+              
+                //Putting * second to make this one left side
+                for (int b = a; b <= 7; b++)
+                {
+                    cout << "*";
+                }        
+                //using the white space loop to make the outside straight
+                for (int b = 1; b <= a; b++)
+                {
+                    cout << " ";
+                }
+                cout << "#";
+                cout << '\n';
+            }
+        for (int a = 1; a <= 6; a++)
+        {
+   
+            //white space loop
+            cout << "#";
+            for (int b = 1; b <= (6 - a); b++)
+            {
+                cout << " ";
+            }
+            //Putting * second to make this one left sided
+            for (int b = (6 - a); b <= 6; b++) {
+                cout << "*";
+            }
+            //Putting * second to make this one left sided
+            for (int b = (6 - a); b <= 7; b++) {
+                cout << "*";
+            }        
+            //using the white space loop to make the outside straight
+            for (int b = 1; b <= (6 - a); b++)
+            {
+                cout << " ";
+            }
+            cout << "#";
+            cout << endl;
+        }
+        //Basic for loop for the first bottom 
+        for (int a = 1; a <= 9; a++)
+        {
+            cout << "# ";
+        }
+        cout << endl;
+      
+}
