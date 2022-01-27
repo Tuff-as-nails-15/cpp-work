@@ -1,0 +1,42 @@
+//Ian Cronizer 1/27/22 2.19
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int one, two, three;
+    cout << "Input three different integers: ";
+    cin >> one;
+    cout << "now Input integer two: ";
+    cin >> two;
+    cout << "now Input integer three: ";
+    cin >> three;
+
+    cout << '\n' << "Sum is ";
+    cout << one + two + three;
+
+    cout << '\n' << "Sum is ";
+    cout << one + two + three;
+
+    cout << '\n' << "Average is ";
+    cout << (one + two + three)/3;
+
+    cout << '\n' << "Product is ";
+    cout << one * two * three;
+
+    cout << '\n' << "smallest is ";
+    if(one < two && one < three)
+    cout << one;
+   else if(one > two && two < three)
+    cout << two;
+    else 
+    cout << three;
+
+    cout << '\n' << "largest is ";
+    if(one > two && one > three)
+    cout << one;
+    else if(one < two &! two > three)
+    cout << two;
+    else 
+    cout << three;
+}
