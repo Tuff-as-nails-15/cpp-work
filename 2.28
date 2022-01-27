@@ -1,0 +1,11 @@
+//Ian Cronizer 1/27/22 2.28
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int one, two, three, four;
+    cout << "Enter 4 integers: " << '\n';
+    cin >> one >> two >> three >> four;
+    cout << '\n' << four << ' ' << three << ' ' << two << ' ' << one;
+} 
