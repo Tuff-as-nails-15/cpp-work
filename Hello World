@@ -4,3 +4,6 @@ using namespace std;
 int main() {
     cout << "Hello World!";
 }
+
+	//clears the consol
+	cout << "\033[2J\033[1;1H";
