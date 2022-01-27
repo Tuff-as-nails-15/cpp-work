@@ -1,0 +1,11 @@
+//Ian Cronizer 1/27/22 2.17
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Welcome to " << "C++ Programing!" << '\n';
+    cout << "Welcome " << "to " << "C++ " << "Programmig!" << '\n';
+    cout << "welcome to ";
+    cout << "C++ Programming" << '\n';
+}
