@@ -1,0 +1,10 @@
+//Ian Cronizer 1/27/22 
+#include<iostream>
+using namespace std;
+
+int main() 
+{
+    cout << "Ian Cronizer" << '\n';
+    cout << "C++ is an awesome language!" << '\n';
+    cout << "1/27/22";
+}
