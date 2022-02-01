@@ -4,11 +4,14 @@ using namespace std;
 
 int main()
 {
+    //def int
     int one;
+    
+    //prompt and get input
     cout << "Enter a number: " << '\n';
-
     cin >> one;
     
+    //check if number is odd or even 
     if(one % 2 == 0)
     cout << "Your number is Even!";
     else
