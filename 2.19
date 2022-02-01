@@ -4,7 +4,10 @@ using namespace std;
 
 int main()
 {
+    //Defining ints
     int one, two, three;
+    
+    //prompting and getting input 
     cout << "Input three different integers: ";
     cin >> one;
     cout << "now Input integer two: ";
@@ -12,18 +15,21 @@ int main()
     cout << "now Input integer three: ";
     cin >> three;
 
+    //output sum
     cout << '\n' << "Sum is ";
     cout << one + two + three;
 
-    cout << '\n' << "Sum is ";
-    cout << one + two + three;
-
+    
+    //output average
     cout << '\n' << "Average is ";
     cout << (one + two + three)/3;
 
+    //output product
     cout << '\n' << "Product is ";
     cout << one * two * three;
 
+
+    //output smallest
     cout << '\n' << "smallest is ";
     if(one < two && one < three)
     cout << one;
@@ -32,6 +38,8 @@ int main()
     else 
     cout << three;
 
+
+    //output largest
     cout << '\n' << "largest is ";
     if(one > two && one > three)
     cout << one;
