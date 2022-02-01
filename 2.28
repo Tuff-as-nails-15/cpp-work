@@ -4,8 +4,13 @@ using namespace std;
 
 int main()
 {
+    //def ints
     int one, two, three, four;
+    
+    //prompt and get input 
     cout << "Enter 4 integers: " << '\n';
     cin >> one >> two >> three >> four;
+    
+    // output reversed
     cout << '\n' << four << ' ' << three << ' ' << two << ' ' << one;
 } 
