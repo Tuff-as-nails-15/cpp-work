@@ -3,14 +3,14 @@
 using namespace std;
 
 int main()
-{
-    //def ints
-    int one, two, three, four;
+{   
+    //def int
+    int one;
     
-    //prompt and get input 
-    cout << "Enter 4 integers: " << '\n';
-    cin >> one >> two >> three >> four;
+    //prompt and get input
+    cout << "Enter a 4 digit integer: " << '\n';
+    cin >> one;
     
-    // output reversed
-    cout << '\n' << four << ' ' << three << ' ' << two << ' ' << one;
+    //calculations 
+    cout << '\n' << one%10 <<  one/10 %10  << one/100 %10 << one/1000;
 } 
