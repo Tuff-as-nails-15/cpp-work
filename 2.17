@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    //output the statment 3 different ways
     cout << "Welcome to " << "C++ Programing!" << '\n';
     cout << "Welcome " << "to " << "C++ " << "Programmig!" << '\n';
     cout << "welcome to ";
