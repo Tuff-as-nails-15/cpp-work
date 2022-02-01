@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    //Just need ot draw a C++ 
     cout << "   CCC   +       +" << '\n';
     cout << " C       +       +" << '\n';
     cout << "C      +++++   +++++" <<  '\n';
