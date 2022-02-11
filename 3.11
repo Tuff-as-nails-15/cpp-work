@@ -1,0 +1,12 @@
+//Ian Cronizer Project 3.11 - 10/14/21
+#include<iostream>
+#include<string>
+#include"car.h"
+using namespace std; 
+
+int main() 
+{
+	car myCar("nissan", "skyline", "Blue", 2001, 60);
+	myCar.displayCarDetails();
+	myCar.setYear(2005);
+} 
