@@ -1,0 +1,61 @@
+#include<iostream>
+#include<string>
+using namespace std; 
+
+class Date 
+{
+public:
+	Date(int Month, int Day, int Year)
+	{
+		setMonth(Month);
+		setDay(Day);
+		setYear(Year);
+	}
+	void setYear(int Year)
+	{
+		year = Year;
+	}
+	int getYear()
+	{
+		return year;
+	}
+	void setDay(int Day)
+	{
+		day = Day;
+	}
+	int getDay()
+	{
+		return day;
+	}
+	void setMonth(int Month)
+	{
+		month = Month;
+	}
+	int getMonth()
+	{
+		return month;
+	}
+	void Private()
+	{
+		int month, day, year;
+	}
+	void displayDate(int month)
+	{
+		if (month > 12)
+		{
+			month = 1; 
+			cout << "Month: " << month << '\n' << "Day: " << day << '\n' << "Year: " << year;
+		}
+		else if (month < 1)
+		{
+			month = 1;
+			cout << "Month: " << month << '\n' << "Day: " << day << '\n' << "Year: " << year;
+		}
+		else
+		{
+			cout <<"Month: " << month << '\n' << "Day: " << day << '\n' << "Year: " << year;
+		}
+	}
+private:
+	int month, day, year; 
+};
