@@ -1,0 +1,67 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class car
+{
+public:
+	car(string cMake, string cFuel, string cColor, int cYear, int cEngine)
+	{
+		setMake(cMake);
+		setYear(cYear);
+		setFuel(cFuel);
+		setColor(cColor);
+		setEngine(cEngine);
+	}
+	void setMake(string cMake)
+	{
+		make = cMake;
+	}
+	string getMake()
+	{
+		return make;
+	}
+	void setYear(int cYear)
+	{
+		year = cYear;
+	}
+	int getYear()
+	{
+		return year;
+	}
+	void setEngine(int cEngine)
+	{
+		engine = cEngine;
+	}
+	int getEngine()
+	{
+		return engine;
+	}
+	void setFuel(string cFuel)
+	{
+		fuel = cFuel;
+	}
+	string getFuel()
+	{
+		return fuel;
+	}
+	void setColor(string cColor)
+	{
+		color = cColor;
+	}
+	string getColor()
+	{
+		return color;
+	}
+	void displayCarDetails()
+	{
+		cout <<"Make: "<< make << "\nYear: " << year << "\nFuel: " << fuel << "\nColor: "<< color << "\nEngine: " << engine << '\n';
+	}
+
+private:
+	string make;
+	string fuel;
+	string color;
+	int year;
+	int engine;
+};
