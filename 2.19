@@ -1,50 +1,50 @@
-//Ian Cronizer 1/27/22 2.19
+//Ian Cronizer 9-7-22
+// 2.19 arithmatic
+
 #include<iostream>
 using namespace std;
 
 int main()
 {
-    //Defining ints
-    int one, two, three;
-    
-    //prompting and getting input 
-    cout << "Input three different integers: ";
-    cin >> one;
-    cout << "now Input integer two: ";
-    cin >> two;
-    cout << "now Input integer three: ";
-    cin >> three;
+    //declaring variables
+    int number1, number2, number3, smallest, largest;
 
-    //output sum
-    cout << '\n' << "Sum is ";
-    cout << one + two + three;
+    //prompt user input
+    cout << "Input three different integers: \n";
+    cout << "Hit Enter after each number: \n";
 
-    
-    //output average
-    cout << '\n' << "Average is ";
-    cout << (one + two + three)/3;
+    //user input is stored in variables
+    cin >> number1 >> number2 >> number3;
 
-    //output product
-    cout << '\n' << "Product is ";
-    cout << one * two * three;
+    //clears the consol
+    cout << "\033[2J\033[1;1H";
 
+    //output users input
+    cout << "Number one is: " << number1;
+    cout << "\nNumber two is: " << number2;
+    cout << "\nNumber three is: " << number3 << endl;
 
-    //output smallest
-    cout << '\n' << "smallest is ";
-    if(one < two && one < three)
-    cout << one;
-   else if(one > two && two < three)
-    cout << two;
-    else 
-    cout << three;
+    //output the results of the arithmatic
+    cout << "\nsum is " << number1 + number2 + number3;
+    cout << "\naverage is " << (number1 + number2 + number3) / 3;
+    cout << "\nproduct is " << number1 * number2 * number3;
 
+    //find the smallest number
+    smallest = number1;
+        if(number2 < smallest)
+                smallest = number2;
+        if(number3 < smallest)
+                smallest = number3;
+    cout << "\nsmallest is ";
+    cout << smallest;
 
-    //output largest
-    cout << '\n' << "largest is ";
-    if(one > two && one > three)
-    cout << one;
-    else if(one < two &! two > three)
-    cout << two;
-    else 
-    cout << three;
+    //find the largest number
+    largest = number1;
+        if(number2 > largest)
+                largest = number2;
+        if(number3 > largest)
+                largest = number3;
+    cout << "\nlargest is ";
+    cout << largest << endl;
+
 }
