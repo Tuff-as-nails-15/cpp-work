@@ -1,0 +1,68 @@
+2.7 Discuss the meaning of each of the following objects:
+A. std::cin
+B. std::cout
+
+2.8 Fill in the blanks in each of the following:
+A. are used to document a program and improve its
+readability.
+B. The object used to print information on the screen is.
+C. A C++ statement that makes a decision is .
+D. Most calculations are normally performed by statements.
+E. The object inputs values from the keyboard.
+
+2.9 Write a single C++ statement or line that accomplishes each of the following:
+A. Print the message "Enter two numbers" .
+B. Assign the product of variables b and c to variable a .
+C. State that a program performs a payroll calculation (i.e.,use text that helps to document a program).
+D. Input three integer values from the keyboard into integer variables a , b and c .
+
+2.10 State which of the following are true and which are false. If false, explain your answers.
+A. All operators are evaluated from left to right.
+B. The following are all valid variable names: _under_bar_ ,m928134 , t5 , j7 , her_sales , his_account_total , a , b , c ,z , z2 .
+C. The statement cout << "a = 5;" ; is a typical example ofan assignment statement.
+D. A valid arithmetic expression with no parentheses is evaluated from left to right.
+E. The following are all invalid variable names: 3g , 87 ,67h2 , h22 , 2h .
+
+2.11 Fill in the blanks in each of the following:
+A. What arithmetic operations are on the same level of precedence as multiplication? .
+B. When parentheses are nested, which set of parentheses is evaluated first in an arithmetic expression? .
+C. A location in the computer’s memory that may contain different values at various times throughout the execution of a program is called a(n) .
+
+2.12 What, if anything, prints when each of the following statements is performed? If nothing prints, then answer “nothing.” Assume x = 2 and y = 3 .
+A. cout << x;
+B. cout << x + x;
+C. cout << "x=" ;
+D. cout << "x = " << x;
+E. cout << x + y << " = " << y + x;
+F. z = x + y;
+G. cin >> x >> y;
+H. // cout << "x + y = " << x + y;
+I. cout << "\n" ;
+
+2.13 Which of the following statements contain variables whose values are replaced?
+A. cin >> b >> c >> d >> e >> f;
+B. p = i + j + k + 7;
+C. cout << "variables whose values are replaced" ;
+D. cout << "a = 5" ;
+
+2.14 Given the algebraic equation , which of the following, if any, are correct C++ statements for this equation?
+A. y = a * x * x * x + 7;
+B. y = a * x * x * (x + 7);
+C. y = (a * x) * x * (x + 7);
+D. y = (a * x) * x * x + 7;
+E. y = a * (x * x * x) + 7;
+F. y = a * x * (x * x + 7);
+
+2.15 (Order of Evaluation) State the order of evaluation of the operators in each of the following C++ statements and show the value of x after each statement is performed.
+A. x = 7 + 3 * 6 / 2 - 1;
+B. x = 2 % 2 + 2 * 2 - 2 / 2;
+C. x = (3 * 9 * (3 + (9 * 3 / (3))));
+10. 
+
+2.16 (Arithmetic) Write a program that asks the user to enter two numbers, obtains the two numbers from the user and prints the sum, product, difference, and quotient of the two numbers.
+ 
+
+2.17 (Printing) Write a program that prints the numbers 1 to 4 on the same line with each pair of adjacent numbers separated by one space. Do this several ways:
+A. Using one statement with one stream insertion operator.
+B. Using one statement with four stream insertion operators.
+C. Using four statement
