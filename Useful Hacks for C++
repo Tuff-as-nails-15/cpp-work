@@ -1,2 +1,6 @@
 	//clears the consol
 	cout << "\033[2J\033[1;1H";
+
+	//makes program wait 2 seconds
+	#include <unistd.h>
+	sleep(2);
