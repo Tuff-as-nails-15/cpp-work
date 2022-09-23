@@ -1,8 +1,9 @@
-//Ian Cronizer 9-22-22
+//Ian Cronizer 9-22-21
 //3.9 Account Class
 #include <iostream>
+#include <limits>
 #include <unistd.h>
-#include "acc.h"
+#include "3.9.h"
 
 using namespace std;
 
@@ -21,6 +22,7 @@ int main()
    cout << "\n\nEnter deposit amount for account1: "; // prompt
    int depositAmount;
    cin >> depositAmount; // obtain user input
+   cin.ignore(numeric_limits<streamsize>::max(), '\n');
    //clears the consol
    cout << "\033[2J\033[1;1H";
    cout << "adding " << depositAmount << " to account1 balance\n" << endl;
@@ -44,6 +46,7 @@ int main()
    cout << "\n\nEnter withdraw amount for account1: "; // prompt
    int withdrawAmount;
    cin >> withdrawAmount; // obtain user input
+   cin.ignore(numeric_limits<streamsize>::max(), '\n');
    //clears the consol
    cout << "\033[2J\033[1;1H";
    cout << "taking " << withdrawAmount << " from account1 balance\n" << endl;
@@ -66,6 +69,7 @@ int main()
 
    cout << "\n\nEnter deposit amount for account2: "; // prompt
    cin >> depositAmount; // obtain user input
+   cin.ignore(numeric_limits<streamsize>::max(), '\n');
    //clears the consol
    cout << "\033[2J\033[1;1H";
    cout << "adding " << depositAmount << " to account2 balance" << endl;
@@ -77,7 +81,7 @@ int main()
 
 
    //clears the consol
-   sleep(5);
+   sleep(2);
    cout << "\033[2J\033[1;1H";
 
 
@@ -89,6 +93,7 @@ int main()
 
    cout << "\n\nEnter withdraw amount for account2: "; // prompt
    cin >> withdrawAmount; // obtain user input
+   cin.ignore(numeric_limits<streamsize>::max(), '\n');
    //clears the consol
    cout << "\033[2J\033[1;1H";
    cout << "taking " << withdrawAmount << " from account2 balance\n" << endl;
@@ -99,7 +104,7 @@ int main()
    account2.withdraw(withdrawAmount); // add to account2's balance
 
    //clears the consol
-   sleep(5);
+   sleep(2);
    cout << "\033[2J\033[1;1H";
 
    // display balances
@@ -108,3 +113,4 @@ int main()
    cout << "\naccount2: " << account2.getName() << " balance is $"
       << account2.getBalance() << endl;
 }
+
