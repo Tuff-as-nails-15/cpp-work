@@ -2,6 +2,7 @@
 //3.9 Account Class
 //Header File
 #include <string>
+#include <limits>
 
 class Account {
 public:
@@ -28,7 +29,10 @@ public:
            balance = balance - withdrawAmount; //take from the balance
       }
       else // if there is not enough to withdraw
+
       std::cout << "withdrawal amount exceeded account balance" << std::endl; // print error
+      std::cout << "press enter to continue... ";
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
    }
 
    // function returns the account balance
@@ -48,5 +52,5 @@ public:
 private:
    std::string name; // account name data member
    int balance{0}; // data member with default initial value
+   int variable;
 }; // end class Account
-
