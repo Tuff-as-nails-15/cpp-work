@@ -1,0 +1,128 @@
+//Ian Cronizer 9-23-22
+//3.10 invoice
+#include <iostream>
+#include "invoice.h"
+
+int main()
+{
+   invoice invoice1("laptop", "IBM", 32, 130, 10, 15);
+  // invoice1.printInvoice();
+}
+
+//Ian Cronizer 9-23-22
+//3.10 header
+#include <string>
+
+class invoice
+{
+public:
+    //function to use for calling later in main
+    invoice(std::string, std::string, int, int, double, double);
+    void setPartNumber(std::string);
+    std::string getPartNumber();
+    void setPartDescription(std::string);
+    std::string getPartDescription();
+    void setQuantity(int);
+    int getQuantity();
+    void setPrice(int);
+    int getPrice();
+    void setVAT(double);
+    double getVAT();
+    void setDiscount(double);
+    double getDiscount();
+       void printInvoice();
+private:
+    std::string partNumber, partDescription;
+    int quantity, price;
+    double VAT,discount;
+};
+
+//Ian Cronizer 9-23-22
+//3.10 invoice implementer
+#include "car.h"
+
+    invoice::invoice (std::string cPartNumber, std::string cPartDescription, int cQuantity, int cPrice, double cVAT, double cDiscount)
+    {
+        setPartNumber(cPartNumber);
+        setPartDescription(cPartDescription);
+        setQuantity(cQuantity);
+        setPrice(cPrice);
+        setVAT(cVAT);
+        setDiscount(cDiscount);
+    }
+    //Set function to store local variable
+void invoice::setPartNumber(std::string cPartNumber)
+    {
+        partNumber = cPartNumber;
+    }
+//get function to allow callback and finish the set functions purpose
+    std::string invoice::getPartNumber()
+    {
+        return partNumber;
+    }
+//Set function to store local variable
+void invoice::setPartDescription(std::string cPartDescription)
+    {
+        partDescription = cPartDescription;
+    }
+//get function to allow callback and finish the set functions purpose
+    std::string invoice::getPartDescription()
+    {
+        return partDescription;
+    }
+
+//Set function to store local variable
+void invoice::setQuantity(int cQuantity)
+    {
+        quantity = cQuantity;
+    }
+//get function to allow callback and finish the set functions purpose
+    int invoice::getQuantity()
+    {
+    return quantity;
+    }
+
+//Set function to store local variable
+void invoice::setPrice(int cPrice)
+    {
+        price = cPrice;
+    }
+//get function to allow callback and finish the set functions purpose
+    int invoice::getPrice()
+    {
+    return price;
+    }
+
+//Set function to store local variable
+void invoice::setVAT(double cVAT)
+    {
+        vat = cVAT;
+    }
+//get function to allow callback and finish the set functions purpose
+    double invoice::getVAT()
+    {
+    return vat;
+    }
+
+//Set function to store local variable
+void invoice::setDiscount(double cDiscount)
+    {
+        discount = cDiscount;
+    }
+//get function to allow callback and finish the set functions purpose
+    double invoice::getDiscount()
+    {
+    return discount;
+    }
+
+    //setting up variables in class to be called later in main
+    void invoice::printInvoice()
+    {
+        std::cout << getPartNumber() << std::endl;
+        std::cout << getPartDescription() << std::endl;
+        std::cout << getQuantity() << std::endl;
+        std::cout << getPrice() << std::endl;
+        std::cout << getVAT() << std::endl;
+        std::cout << getDiscount() << std::endl;
+    }
+}
