@@ -34,12 +34,12 @@ public:
 private:
     std::string partNumber, partDescription;
     int quantity, price;
-    double VAT,discount;
+    double vat,discount;
 };
 
 //Ian Cronizer 9-23-22
 //3.10 invoice implementer
-#include "car.h"
+#include "invoice.h"
 
     invoice::invoice (std::string cPartNumber, std::string cPartDescription, int cQuantity, int cPrice, double cVAT, double cDiscount)
     {
