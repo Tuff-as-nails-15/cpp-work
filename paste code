@@ -96,12 +96,12 @@ void invoice::setPrice(int cPrice)
 //Set function to store local variable
 void invoice::setVAT(double cVAT)
     {
-        vat = cVAT;
+        VAT = cVAT;
     }
 //get function to allow callback and finish the set functions purpose
     double invoice::getVAT()
     {
-    return vat;
+    return VAT;
     }
 
 //Set function to store local variable
