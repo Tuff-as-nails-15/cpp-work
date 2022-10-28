@@ -1,16 +1,21 @@
-//Ian Cronizer 4.29 11/2/21
+//Ian Cronizer 4.29 Checkerboard 10/27/22
 #include<iostream>
-using namespace std;
 
 int main()
 {
-	//defining int 
-	int counter = 0;
-	//using only the three outputs, making a pattern that repeats 4 times
-	while (counter <= 3)
-	{
-		cout << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << endl;
-		cout << ' ' << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << "* " << endl;
-		counter++;
-	}
+int a = 0;
+while(a++ < 8) 
+    {
+    int n = 0; 
+    while(n++ < 8) 
+        {
+            std::cout << "* ";
+        }
+   std::cout << std::endl;
+    if(a%2 != 0)
+        {
+        std::cout << ' ';
+        }
+    }
 }
+
