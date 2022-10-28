@@ -1,19 +1,24 @@
-//Ian Cronizer 4.27 11/2/21
+//Ian Cronizer 4.27 Palindromes (written in Vi editor) 10/27/22
 #include<iostream>
-using namespace std;
 
-int main() 
+int main()
 {
-	//Call and Define an int 
-	cout << "Please enter a 5 digit Integer: ";
-	int n,number,count = 0;
-	cin >> n;
-	//Check the first and the last int, if they dont match its not a palindrome
-	while (count <=5) 
-	{
-		number = n;
-		cout << number / 10000 << '\n';
-		cout << number % 10 << '\n';
-		count++;
-	}
+int palindrome;
+
+std::cout << "please enter a 5 digit integer: ";
+std::cin >> palindrome;
+//std::cout << palindrome << std::endl;
+
+//std::cout << palindrome/1000;
+int left = palindrome/10000;
+int left2 = palindrome%10000/1000;
+int right = palindrome%10;
+int right2 = palindrome%100/10;
+
+//std::cout << right << right2 << std::endl;
+//std::cout << left  << left2 << std::endl;
+if(left == right && left2 == right2)
+    std::cout << "palindrome";
+else
+    std::cout << "nope";
 }
