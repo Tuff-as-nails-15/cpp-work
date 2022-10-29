@@ -1,18 +1,13 @@
-//Ian Cronizer 4.15 11/2/21
-#include<iostream>
-using namespace std;
+//Ian Cronizer 4.15 10/28/22 
+#include<iostream> 
 
-int main()
+int main() 
 {
-	double hours, hour;
-	cout << "Enter number of hours worked (-1 to end): ";
-	cin >> hours;
-	//making a while loop
-	while (hours != -1)
-	{
-	hour = hours/10 +2;
-    cout << hour << '\n';
-	cout << "Enter number of hours worked (-1 to end): ";
-	cin >> hours;
-	}
+    double hours = 0;
+    while(hours != -1)
+    { 
+    std::cout << "Enter numer of hours worked (-1 to end): " ;
+    std::cin >> hours;
+    std::cout << "Accrued leave :" << 2 + hours/10 << std::endl; 
+    }
 }
