@@ -1,0 +1,40 @@
+//Ian Cronizer 4.26 Square of Asterisk 10/28/22
+#include<iostream>
+
+int main()
+{
+    int n, a, b;
+    std::cout<< "Enter a number for how big you want the square to be" << std::endl;
+    std::cin >> n;
+    while(a < n)
+    {
+    std::cout << "*";
+    a++;
+    }
+    
+    a = 0;
+    std::cout << std::endl;
+
+    while(a < n)
+    {
+        std::cout << "*";
+        while(b < n-2) 
+        {
+            std::cout << " ";
+            b++;
+        }
+        b = 0;
+        std::cout << "*";
+        std::cout << std::endl;
+        a++;
+    }
+
+    a=0;
+
+    while(a < n)
+    {
+       std::cout << "*";
+       a++;
+    }
+
+}
