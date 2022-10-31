@@ -1,19 +1,34 @@
-//Ian Cronizer 4.37 11/2/21
-#include<iostream>
-using namespace std;
+//Ian Cronizer 4.37 Crypotography 
+#include<iostream> 
 
 int main()
 {
-	//get input
-	int number, number1, number2, number3, number4;
-	cout << "Enter the 4 digit integer: ";
-	cin >> number;
-	//seperate each number the method of each is different, so it cant be looped.
-	number1 = ((number / 1000;)+7)%10)
-	number2 = number % 1000 / 100;
-	number3 = number % 100 / 10;
-	number4 = number % 10;
+    int E;
 
+    std::cout << "Enter a 4 digit integer";
+    std::cin >> E;
+    std::cout << "Entered Integer: " << E << std::endl;
+
+    int one = E/1000;
+    int two = E/100%10;
+    int three = E/10%10;
+    int four = E%10;
+
+    std::cout << one << std::endl;
+    std::cout << two << std::endl;
+    std::cout << three << std::endl;
+    std::cout << four << std::endl;
+
+    int new_one = one + 7%10;
+    int new_two = two + 7%10;
+    int new_three = three + 7%10;
+    int new_four = four + 7%10;
+
+    std::cout << new_one << std::endl;
+    std::cout << new_two << std::endl;
+    std::cout << new_three << std::endl;
+    std::cout << new_four << std::endl;
+
+    std::cout << "Encryped  integer: ";
+    std::cout << new_three << new_four << new_one << new_two;
 }
-//i just cant do this with a for loop, im absolutly stumped.
-//cout the same as number one and at the end switch the numbers around
