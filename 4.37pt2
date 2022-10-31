@@ -1,0 +1,16 @@
+#include<iostream>
+
+int main()
+{
+    int first, second, third, fourth;
+    std::cout << "Enter the First Digit to decypher";
+    std::cin >> first;
+    std::cout << "Enter the Second Digit to decypher";
+    std::cin >> second;
+    std::cout << "Enter the Third Digit to decypher";
+    std::cin >> third;
+    std::cout << "Enter the Frouth Digit to decypher";
+    std::cin >> fourth;
+
+    std::cout << first << second << third << fourth;
+}
