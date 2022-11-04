@@ -22,5 +22,5 @@ int main()
     std::cin >> fourth;
 
     //output decyphered 
-    std::cout << first << second << third << fourth;
+    std::cout << first+3 << second+3 << third+3 << fourth+3;
 }
