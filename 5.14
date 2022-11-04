@@ -1,24 +1,65 @@
-//Ian Cronizer 5.14 11/30/21
-#include<iostream>
-#include<iomanip>
-using namespace std;
+//Ian Cronizer 5.14 11/03/22
+#include <iostream>
 
-int main()
-{
-	//Initializing the variables
-	double principle{ 1000.00 };
-	double rate = { 0.05 };
-	//Comprehensible input 
-	cout << fixed << setprecision(2);
-	cout << "Initial principal: " << principle << endl;
-	cout << "	Intrest rate: " << rate << endl << '\n';
-	cout << "Year    "<< setw(8) << "    Amount on deposit" << endl;
-	//for loop 
-	for (int year = 1; year < 11; year = year + 1) 
-	{
-	//set an amount and make the rate increase by 1 every 2 passes
-	double amount = principle * pow(1.0 + rate, year);
-	cout << setw(4) << year <<setw(20) << amount << endl;
-	rate = rate + 0.005;
-	}
+int main() {
+    //Basic for loop for the first shape
+    for (int a {1}; a <= 10; a++)
+    {
+        //Putting * first to make this one right sided
+        for (int b {1}; b <= a; b++)
+        {
+            std::cout << "*";
+        }
+        //white space loop
+        for (int b = a + 1; b <= 10; b++)
+        {
+            std::cout << " ";
+        }
+        std::cout << '\n';
+    }
+    //Basic for loop for the second shape
+    for (int a {1}; a <= 10; a++)
+    {
+        //Putting * first to make this one right sided
+        for (int b {1}; b <= (11 - a); b++)
+        {
+            std::cout << "*";
+        }
+        //white space loop
+        for (int b = (11 - a) + 1; b <= 10; b++)
+        {
+            std::cout << " ";
+        }
+        std::cout << '\n';
+    }
+    //Basic for loop for the third shape
+    for (int a {1}; a <= 10; a++)
+    {
+        //white space loop
+        for (int b {1}; b <= a; b++)
+        {
+            std::cout << " ";
+        }
+        //Putting * second to make this one left sided
+        for (int b = a; b <= 10; b++)
+        {
+            std::cout << "*";
+        }
+        std::cout << '\n';
+    }
+    //Basic for loop for the fourth shape
+    for (int a {1}; a <= 10; a++)
+    {
+        //white space loop
+        for (int b {1}; b <= (11 - a); b++)
+        {
+            std::cout << " ";
+        }
+        //Putting * second to make this one left sided
+        for (int b = (11 - a); b <= 10; b++) {
+            std::cout << "*";
+        }
+        std::cout << '\n';
+    }
 }
+
