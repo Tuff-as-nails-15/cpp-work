@@ -26,10 +26,11 @@ int main()
     std::cout << four << std::endl;
 
     //performs crypotgraphy to int 
-    int new_one = one + 7%10;
-    int new_two = two + 7%10;
-    int new_three = three + 7%10;
-    int new_four = four + 7%10;
+    int new_one = (one+7) %10;
+    int new_two = (two+7) %10;
+    int new_three = (three+7) % 10;
+    int new_four = (four+7) % 10;
+
 
     //outputs new int 
     std::cout << new_one << std::endl;
