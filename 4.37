@@ -3,32 +3,41 @@
 
 int main()
 {
+    //declare variable
     int E;
-
+    
+    //prompt user 
     std::cout << "Enter a 4 digit integer";
+    //get user input 
     std::cin >> E;
+    //shows int to user 
     std::cout << "Entered Integer: " << E << std::endl;
 
+    //breaks int into seperate peices 
     int one = E/1000;
     int two = E/100%10;
     int three = E/10%10;
     int four = E%10;
 
+    //outputs peices 
     std::cout << one << std::endl;
     std::cout << two << std::endl;
     std::cout << three << std::endl;
     std::cout << four << std::endl;
 
+    //performs crypotgraphy to int 
     int new_one = one + 7%10;
     int new_two = two + 7%10;
     int new_three = three + 7%10;
     int new_four = four + 7%10;
 
+    //outputs new int 
     std::cout << new_one << std::endl;
     std::cout << new_two << std::endl;
     std::cout << new_three << std::endl;
     std::cout << new_four << std::endl;
 
+    //shows new int to user 
     std::cout << "Encryped  integer: ";
     std::cout << new_three << new_four << new_one << new_two;
 }
