@@ -3,20 +3,21 @@
 
 int main()
 {
+//declare variable
 int palindrome;
 
+//prompt user
 std::cout << "please enter a 5 digit integer: ";
+//get input from user 
 std::cin >> palindrome;
-//std::cout << palindrome << std::endl;
 
-//std::cout << palindrome/1000;
+//splitting int into parts 
 int left = palindrome/10000;
 int left2 = palindrome%10000/1000;
 int right = palindrome%10;
 int right2 = palindrome%100/10;
 
-//std::cout << right << right2 << std::endl;
-//std::cout << left  << left2 << std::endl;
+//check if is palindrome or not
 if(left == right && left2 == right2)
     std::cout << "palindrome";
 else
