@@ -1,95 +1,94 @@
-//Ian Cronizer 5.28 11/30/21
+//Ian Cronizer 5.28 11/9/22
 #include<iostream>
 #include<iomanip>
-using namespace std;
 
 int main()
 {
 	for (int a = 1; a < 11; a = a + 1)
 	{
-		cout << "On the ";
+		std::cout << "On the ";
 		switch (a)
 		{
 
 			case 1:
-				cout << "first";
+				std::cout << "first";
 				break;
 			case 2:
-				cout << "second";
+				std::cout << "second";
 				break;
 			case 3:
-				cout << "third";
+				std::cout << "third";
 				break;
 			case 4:
-				cout << "fourth";
+				std::cout << "fourth";
 				break;
 			case 5:
-				cout << "fifth";
+				std::cout << "fifth";
 				break;
 			case 6:
-				cout << "sixth";
+				std::cout << "sixth";
 				break;
 			case 7:
-				cout << "seventh";
+				std::cout << "seventh";
 				break;
 			case 8:
-				cout << "eighth";
+				std::cout << "eighth";
 				break;
 			case 9:
-				cout << "ninth";
+				std::cout << "ninth";
 				break;
 			case 10:
-				cout << "tenth";
+				std::cout << "tenth";
 				break;
 			case 11:
-				cout << "eleventh";
+				std::cout << "eleventh";
 				break;
 			case 12:
-				cout << "twelfth";
+				std::cout << "twelfth";
 				break;
 		}
-		cout << " day of Christmas my true love sent to me ";
+		std::cout << " day of Christmas my true love sent to me ";
 
 		switch (a)
 		{
 
 		case 1:
-			cout << "A Partridge in a Pear Tree";
+			std::cout << "A Partridge in a Pear Tree";
 			break;
 		case 2:
-			cout << "2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 3:
-			cout << "3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 4:
-			cout << "4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 5:
-			cout << "5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 6:
-			cout << "6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 7:
-			cout << "7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 8:
-			cout << "8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 9:
-			cout << "9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 10:
-			cout << "10 Lords a Leaping 9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "10 Lords a Leaping 9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 11:
-			cout << "11 Pipers Piping 10 Lords a Leaping 9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "11 Pipers Piping 10 Lords a Leaping 9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		case 12:
-			cout << "12 Drummers Drumming 11 Pipers Piping 10 Lords a Leaping 9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
+			std::cout << "12 Drummers Drumming 11 Pipers Piping 10 Lords a Leaping 9 Ladies Dancing 8 Maids a Milking 7 Swans a Swimming 6 Geese a Laying 5 Golden Rings 4 Calling Birds 3 French Hens 2 Turtle Doves and a Partridge in a Pear Tree";
 			break;
 		}
-		cout << endl;
+		std::cout << std::endl;
 	}
 }

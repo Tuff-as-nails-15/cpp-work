@@ -1,4 +1,4 @@
-//Ian Cronizer 5.37 12/01/21
+//Ian Cronizer 5.37 11/9/22
 #include<iostream>
 #include<iomanip>
 #include<stdlib.h> 
@@ -10,45 +10,48 @@ int main()
 	//declare the variables
 	int q, w, e, r, grade,grade1, grade2, grade3, grade4;
 
+	//clears the consol
+	std::cout << "\033[2J\033[1;1H";
+
 	//prompt and input
-	cout << "Does the globe warm?" << endl;
-	cout << "1) yes" << endl << "2) no " << endl << "3) sometimes" << endl << "4) its gettin' there" << endl;
-	cout << "Type: 1) 2) 3) 4)" << endl;
+	std::cout << "Does the globe warm?" << std::endl;
+	std::cout << "1) yes" << std::endl << "2) no " << std::endl << "3) sometimes" << std::endl << "4) its gettin' there" << std::endl;
+	std::cout << "Type: 1) 2) 3) 4)" << std::endl;
 	cin >> q;
-	cout << endl;
+	std::cout << std::endl;
 
 	//clears the consol
-	cout << "\033[2J\033[1;1H";
+	std::cout << "\033[2J\033[1;1H";
 
 	//prompt and input
-	cout << "Is it your fault?" << endl;
-	cout << "1) yes" << endl << "2) i hope not" << endl << "3) its everyones" << endl << "4) China" << endl;
-	cout << "Type: 1) 2) 3) 4)" << endl;
+	std::cout << "Is it your fault?" << std::endl;
+	std::cout << "1) yes" << std::endl << "2) i hope not" << std::endl << "3) its everyones" << std::endl << "4) China" << std::endl;
+	std::cout << "Type: 1) 2) 3) 4)" << std::endl;
 	cin >> w;
-	cout << endl;
+	std::cout << std::endl;
 
 	//clears the consol
-	cout << "\033[2J\033[1;1H";
+	std::cout << "\033[2J\033[1;1H";
 
 	//prompt and input
-	cout << "Will you only answer 4?" << endl;
-	cout << "1) yes" << endl << "2) i dont know yet" << endl << "3) China again" << endl << "4) all of the above" << endl;
-	cout << "Type: 1) 2) 3) 4)" << endl;
+	std::cout << "Will you only answer 4?" << std::endl;
+	std::cout << "1) yes" << std::endl << "2) i dont know yet" << std::endl << "3) China again" << std::endl << "4) all of the above" << std::endl;
+	std::cout << "Type: 1) 2) 3) 4)" << std::endl;
 	cin >> e;
-	cout << endl;
+	std::cout << std::endl;
 
 	//clears the consol
-	cout << "\033[2J\033[1;1H";
+	std::cout << "\033[2J\033[1;1H";
 
 	//prompt and input
-	cout << "Are Electric Vehicles the Answer?" << endl;
-	cout << "1) yes" << endl << "2) No" << endl << "3) Remain ignorant" << endl << "4) Let the world Burn!" << endl;
-	cout << "Type: 1) 2) 3) 4)" << endl;
+	std::cout << "Are Electric Vehicles the Answer?" << std::endl;
+	std::cout << "1) yes" << std::endl << "2) No" << std::endl << "3) Remain ignorant" << std::endl << "4) Let the world Burn!" << std::endl;
+	std::cout << "Type: 1) 2) 3) 4)" << std::endl;
 	cin >> r;
-	cout << endl;
+	std::cout << std::endl;
 
 	//clears the consol
-	cout << "\033[2J\033[1;1H";
+	std::cout << "\033[2J\033[1;1H";
 
 
 	//Calculate the grade
@@ -86,5 +89,5 @@ int main()
 	}
 
 	//output the grade 
-	cout << "Your Grade is: " << grade1 + grade2 + grade3 + grade4 << "%";
+	std::cout << "Your Grade is: " << grade1 + grade2 + grade3 + grade4 << "%";
 }

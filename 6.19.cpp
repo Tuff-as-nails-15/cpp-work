@@ -1,6 +1,7 @@
+//Ian Cronizer 6.26 11/9/22
 #include<iostream>
 #include<iomanip>
-using namespace std;
+#include<cmath>
 
 int hyp(int A, int B)
 {
@@ -16,15 +17,15 @@ int main()
 	//define variables
 	int A, B;
 	//get input for side 1
-	cout << "Input Side 1: ";
-	cin >> A;
+	std::cout << "Input Side 1: ";
+	std::cin >> A;
 	//clears the consol
-	cout << "\033[2J\033[1;1H";
+	std::cout << "\033[2J\033[1;1H";
 	//get input for side 2
-	cout << "Input Side 2: ";
-	cin >> B;
+	std::cout << "Input Side 2: ";
+	std::cin >> B;
 	//clears the consol
-	cout << "\033[2J\033[1;1H";
+	std::cout << "\033[2J\033[1;1H";
 	//output the answer
-	cout << "Your Hypotenuse is the square root of: " << hyp(A, B);
+	std::cout << "Your Hypotenuse is : " << sqrt(hyp(A, B));
 }

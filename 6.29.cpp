@@ -1,4 +1,4 @@
-//Ian Cronizer 6.29 12/05/21
+//Ian Cronizer 6.29 11/9/22
 #include<iostream>
 using namespace std;
 
@@ -24,20 +24,20 @@ int main() {
     int PrimeNumber;
     bool isprimeflag;
     //Prompt
-    cout << "Enter your Number: ";
+    std::cout << "Enter your Number: ";
     //input
-    cin >> PrimeNumber;
+    std::cin >> PrimeNumber;
     //clears the consol
-    cout << "\033[2J\033[1;1H";
+    std::cout << "\033[2J\033[1;1H";
     //sends isprime to the function 
     isprimeflag = PrimeNumCheck(PrimeNumber);
     //Boolean to check if true and return an output
     if (isprimeflag == true)
     {
-        cout << "Your number is prime";
+        std::cout << "Your number is prime";
     }
     else
     {
-        cout  << "Your number is not prime";
+        std::cout  << "Your number is not prime";
     }
 }

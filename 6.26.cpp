@@ -1,6 +1,5 @@
-//Ian Cronizer 6.26 12/6/21
+//Ian Cronizer 6.26 11/9/22
 #include<iostream>
-using namespace std;
 
 double FtoC(double A)
 {
@@ -14,11 +13,11 @@ int main()
 	//declare A
 	double A;
 	//prompt
-	cout << "Enter Fahrenheit: ";
+	std::cout << "Enter Fahrenheit: ";
 	//get input
-	cin >> A;
+	std::cin >> A;
 	//clears the consol
-	cout << "\033[2J\033[1;1H";
+	std::cout << "\033[2J\033[1;1H";
 	//output
-	cout << "The conversion to Celsius is: " << FtoC(A);
+	std::cout << "The conversion to Celsius is: " << FtoC(A);
 }
