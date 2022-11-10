@@ -1,6 +1,6 @@
+//Ian Cronizer 9-26-22
 #include<iostream>
 #include<string>
-using namespace std;
 class HeartRates
 
 {
@@ -111,7 +111,7 @@ public:
 
 	void targerHR()
 	{
-		cout << "Target range is: " << .5 * maxRate() << " - " << .85 * maxRate() << endl;
+		std::cout << "Target range is: " << .5 * maxRate() << " - " << .85 * maxRate() << endl;
 	}
 
 private:

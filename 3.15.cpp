@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-#include"HeartRates.h"
+#include"3.15.h"
 using namespace std;
 
 int main() {
@@ -26,3 +26,4 @@ int main() {
 	cout << "Target Heart Rate: ";
 	Ian.targerHR(); 
 }
+

@@ -71,11 +71,11 @@ public:
 	void getInvoiceAmount(int price, int quantity){
 		if (price > 0 && quantity > 0) 
 			{
-				cout << price + quantity + VAT - discount;
+				std::cout << price + quantity + VAT - discount;
 			}
 		else
 		{
-			cout << "Please Enter a Valid Price and or Quantity";
+			std::cout << "Please Enter a Valid Price and or Quantity";
 		}
 		}
 private:

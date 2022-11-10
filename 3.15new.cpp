@@ -1,7 +1,7 @@
 //Ian Cronizer 9-26-22
 //3.15
 #include<iostream>
-#include "3.15.h"
+#include "3.15new.h"
 //main function
 int main()
 {
