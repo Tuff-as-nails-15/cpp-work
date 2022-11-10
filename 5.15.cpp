@@ -1,6 +1,5 @@
 //Ian Cronizer 5.14 11/30/21
 #include <iostream>
-using namespace std;
 
 int main() {
     //Basic for loop for the first shape
@@ -9,14 +8,14 @@ int main() {
         //Putting * first to make this one right sided
         for (int b = 1; b <= a; b++) 
         {
-            cout << "*";
+            std::cout << "*";
         }
         //white space loop
         for (int b = a + 1; b <= 10; b++)
         {
-            cout << " ";
+            std::cout << " ";
         }
-        cout << '\n';
+        std::cout << '\n';
     }
     //Basic for loop for the second shape
     for (int a = 1; a <= 10; a++)
@@ -24,14 +23,14 @@ int main() {
         //Putting * first to make this one right sided
         for (int b = 1; b <= (11 - a); b++)
         {
-            cout << "*";
+            std::cout << "*";
         }
         //white space loop
         for (int b = (11 - a) + 1; b <= 10; b++)
         {
-            cout << " ";
+            std::cout << " ";
         }
-        cout << '\n';
+        std::cout << '\n';
     }
     //Basic for loop for the third shape
     for (int a = 1; a <= 10; a++)
@@ -39,14 +38,14 @@ int main() {
         //white space loop
         for (int b = 1; b <= a; b++)
         {
-            cout << " ";
+            std::cout << " ";
         }
         //Putting * second to make this one left sided
         for (int b = a; b <= 10; b++)
         {
-            cout << "*";
+            std::cout << "*";
         }
-        cout << '\n';
+        std::cout << '\n';
     }
     //Basic for loop for the fourth shape
     for (int a = 1; a <= 10; a++)
@@ -54,12 +53,12 @@ int main() {
         //white space loop
         for (int b = 1; b <= (11 - a); b++) 
         {
-            cout << " ";
+            std::cout << " ";
         }
         //Putting * second to make this one left sided
         for (int b = (11 - a); b <= 10; b++) {
-            cout << "*";
+            std::cout << "*";
         }
-        cout << '\n';
+        std::cout << '\n';
     }
 }
