@@ -3,6 +3,7 @@
 #include <iostream>
 #include "invoice.h"
 
+//test comment
 int main()
 {
    invoice invoice1("laptop", "IBM", 32, 130, 10, 15);
