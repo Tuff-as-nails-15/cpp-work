@@ -1,0 +1,10 @@
+hitting . insterts the last thing you typed in insert mode
+
+hitting shift + S deletes line and puts you in insert mode 
+
+shift + O puts text above
+o puts text under 
+
+shift + P pastes text above
+p pastes text under 
+#'s + G put you on the line of the # you typed
