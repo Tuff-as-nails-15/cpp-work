@@ -1,37 +1,18 @@
-//Ian Cronizer 6.29 11/9/22
+//Ian Cronizer 6.33 11/15/22
 #include<iostream>
-using namespace std;
 
-//a function to check if prime
-bool PrimeNumCheck(int PrimeNumber) 
+//void function that prints heads or tails 
+void coinFlip()
 {
-    //sets a flag to check the boolean
-    bool isprimeflag = true;
-    if( rand()% 2 == 0)
-        cout << "number two ("<< PrimeNumber<<") is even\n";
-    if( rand()% 2 == 1)
-        cout << "number two ("<<  PrimeNumber<<") is odd\n";
-
-    return isprimeflag;
+	//randomizes seed for rand 
+    srand(time(0));
+	//outputs the result of rand as heads or tails then flushes buffer
+	std::cout << (rand() % 2 ? "Heads" : "Tails") << std::endl;
 }
 
-int main() {
-    //Declaration
-    int PrimeNumber;
-    bool isprimeflag;
-    srand(time(0));
-	std::cout << "hi";
-    //clears the consol
-    std::cout << "\033[2J\033[1;1H";
-    //sends isprime to the function 
-    isprimeflag = PrimeNumCheck(PrimeNumber);
-    //Boolean to check if true and return an output
-    if (isprimeflag == true)
-    {
-        std::cout << "Your number is prime" << rand();
-    }
-    else
-    {
-        std::cout  << "Your number is not prime";
-    }
+//main function that calls void function
+int main()
+{
+	coinFlip();
+	return 0;
 }
