@@ -1,6 +1,5 @@
 Test Next Monday on chapter 6
 5.29
 make 5.37 switch/case
-6.57
 6.35
 6.47

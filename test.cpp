@@ -1,18 +1,19 @@
 //Ian Cronizer 6.33 11/15/22
 #include<iostream>
-
-//void function that prints heads or tails 
-void coinFlip()
+void wagger(int& bank, int& t)
 {
-	//randomizes seed for rand 
-    srand(time(0));
-	//outputs the result of rand as heads or tails then flushes buffer
-	std::cout << (rand() % 2 ? "Heads" : "Tails") << std::endl;
+        
+    std::cout << "Enter a wagger: ";
+    std::cin >> bank;
+	std::cout << bank << std::endl;
+	t= t - bank;
 }
 
-//main function that calls void function
-int main()
+int main() 
 {
-	coinFlip();
-	return 0;
+ int bank;
+ int t=1000;
+ wagger(bank,t);
+ std::cout << bank << std::endl;
+ std::cout << t << std::endl;
 }
