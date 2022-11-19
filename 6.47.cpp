@@ -12,7 +12,7 @@ void wagger(int& bank, int& bet)
             
     std::cout << "Enter a wagger: ";
     std::cin >> bet;
-    std::cout << bet << std::endl;
+    //std::cout << bet << std::endl;
 	//bet = bank - bet;
 	bank = bank - bet;
 }
@@ -24,11 +24,11 @@ int main() {
    int bet;
    int bank = 1000;
 
-   while(bank >= 0) 
+   while(bank > 0) 
    {
    wagger(bank, bet);
-   std::cout << bet << std::endl;
-   std::cout << bank << std::endl;
+   std::cout << "bet " <<bet << std::endl;
+   std::cout << "bank " << bank << std::endl;
    // randomize random number generator using current time
    srand(static_cast<unsigned int>(time(0)));
 
@@ -41,6 +41,7 @@ int main() {
       case 7: // win with 7 on first roll
       case 11: // win with 11 on first roll           
          gameStatus = Status::WON;
+		 bank = bank + bet*2;
          break;
       case 2: // lose with 2 on first roll
       case 3: // lose with 3 on first roll
