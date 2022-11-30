@@ -10,7 +10,7 @@ int main()
    // calculate the factorials of 0 through 10                                  
    for (unsigned int counter{0}; counter <= 10; ++counter)
    {                    
-      std::cout << counter << "! = " << factorial(counter) << std::endl;
+      std::cout << std::setw(2) << counter << "! = " << factorial(counter) << std::endl;
    }                                                                            
 }                                                                               
                                                                                 
