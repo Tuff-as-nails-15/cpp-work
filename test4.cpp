@@ -7,8 +7,8 @@ int main()
 {
     //Test
     std::string clearText = "this is a test";
-    std::cout << clearText[6] << std::endl;
-    std::cout << clearText.length() << std::endl;
+    //std::cout << clearText[6] << std::endl;
+    //std::cout << clearText.length() << std::endl;
 
     //Alphabets for encryption
     std::string alpha = "abcdefghijklmnopqrstuvwxyz";
@@ -19,25 +19,28 @@ int main()
     for (int i = 0; i < 26; i++)
         if (clearText[0] == alpha[i])
             alphaIndex = i;
-    cout << alphaIndex << endl;    
-    cout << subst[alphaIndex] << endl;
+    //cout << alphaIndex << endl;    
+    //cout << subst[alphaIndex] << endl;
 
     array <char, 50> encryptedData{};
     encryptedData[0] = subst[alphaIndex];
-    cout << encryptedData[0] << endl;
+    //cout << encryptedData[0] << endl;
 
     int caesarIndex;
     int shift = 3;
     for (int i = 0; i < 26; i++)
         if (clearText[0] == alpha[i])
     alphaIndex = i;
-    cout << alphaIndex << endl;
+    //cout << alphaIndex << endl;
     //caesarIndex = alphaIndex + shift;
     caesarIndex = (alphaIndex + shift) % 26;
-    cout << alpha[caesarIndex] << endl;
+    //cout << alpha[caesarIndex] << endl;
     encryptedData[0] = alpha[caesarIndex];
     cout << encryptedData[0] << endl;
-    
+   
+    //for(clearText.length()){ 
+    for(int i = 0; i <=  clearText.length(); i++)
+    {
+    cout << clearText[i]; 
+    }
 }
-
-
