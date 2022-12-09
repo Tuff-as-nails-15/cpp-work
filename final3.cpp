@@ -1,43 +1,28 @@
 //Ian Cronizer Final 12-5-22
 #include<iostream>
-#include<array>
 using namespace std;
-
 int main()
 {
-    //Test
-    std::string clearText = "this is a test";
-    std::cout << clearText[6] << std::endl;
-    std::cout << clearText.length() << std::endl;
+char message[100], ch;
+int i, key;
+cout << "Enter a message to encrypt: ";
+cin.getline(message, 100);
+cout << "Enter key: ";
+cin >> key;
 
-    //Alphabets for encryption
-    std::string alpha = "abcdefghijklmnopqrstuvwxyz";
-    std::string subst = "qwertyuiopasdfghjklzxcvbnm";
+for(i = 0; message[i] != '\0'; ++i){
+ch = message[i];
 
-    //alphaIndex test
-    int alphaIndex;
-    for (int i = 0; i < 26; i++)
-        if (clearText[0] == alpha[i])
-            alphaIndex = i;
-    cout << alphaIndex << endl;    
-    cout << subst[alphaIndex] << endl;
+if(ch >= 'a' && ch <= 'z'){
+ch = ch + key;
 
-    array <char, 50> encryptedData{};
-    encryptedData[0] = subst[alphaIndex];
-    cout << encryptedData[0] << endl;
-
-    int caesarIndex;
-    int shift = 3;
-    for (int i = 0; i < 26; i++)
-        if (clearText[0] == alpha[i])
-    alphaIndex = i;
-    cout << alphaIndex << endl;
-    //caesarIndex = alphaIndex + shift;
-    caesarIndex = (alphaIndex + shift) % 26;
-    cout << alpha[caesarIndex] << endl;
-    encryptedData[0] = alpha[caesarIndex];
-    cout << encryptedData[0] << endl;
-    
+if(ch > 'z'){
+ch = ch - 'z' + 'a' - 1;
 }
 
-
+message[i] = ch;
+}
+}
+cout << "Encrypted message: " << message;
+return 0;
+}

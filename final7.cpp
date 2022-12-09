@@ -64,4 +64,25 @@ int main()
     Subst();
     //Caesar();
     return 0;
+        char c;
+    cout << "\n";
+    cout << "Enter Your Choice : -> \n";
+    cout << "1. encrypt substitution \n";
+    cout << "2. encrypt caesar \n";
+    cout << "3. decrypt substitution\n";
+    cout << "4. decrypt caesar\n";
+    cin >> c;
+    cin.ignore();
+ 
+    switch (c) {
+    case '1': {
+    Subst();
+        break;
+    }
+    case '2': {
+    Caesar();
+        break;
+    }
+    }
+    return 0;  
 }

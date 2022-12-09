@@ -1,43 +1,127 @@
-//Ian Cronizer Final 12-5-22
+//Ian Cronizer Final 12-5-22  
 #include<iostream>
-#include<array>
+#include<string>
 using namespace std;
 
-int main()
+void unCaesar()
 {
-    //Test
-    std::string clearText = "this is a test";
-    std::cout << clearText[6] << std::endl;
-    std::cout << clearText.length() << std::endl;
+char message[100], input;
+int i, key;
 
-    //Alphabets for encryption
-    std::string alpha = "abcdefghijklmnopqrstuvwxyz";
-    std::string subst = "qwertyuiopasdfghjklzxcvbnm";
+cout << "Enter a message to decrypt: ";
+cin.getline(message, 100);
+cout << "Enter key: ";
+cin >> key;
 
-    //alphaIndex test
-    int alphaIndex;
-    for (int i = 0; i < 26; i++)
-        if (clearText[0] == alpha[i])
-            alphaIndex = i;
-    cout << alphaIndex << endl;    
-    cout << subst[alphaIndex] << endl;
+for(i = 0; message[i] != '\0'; ++i){
+input  = message[i];
 
-    array <char, 50> encryptedData{};
-    encryptedData[0] = subst[alphaIndex];
-    cout << encryptedData[0] << endl;
+if( input >= 'a' &&  input <= 'z')
+{
+input  -= key;
 
-    int caesarIndex;
-    int shift = 3;
-    for (int i = 0; i < 26; i++)
-        if (clearText[0] == alpha[i])
-    alphaIndex = i;
-    cout << alphaIndex << endl;
-    //caesarIndex = alphaIndex + shift;
-    caesarIndex = (alphaIndex + shift) % 26;
-    cout << alpha[caesarIndex] << endl;
-    encryptedData[0] = alpha[caesarIndex];
-    cout << encryptedData[0] << endl;
-    
+if( input < 'a')
+{
+input +=26  ;
+}
+}
+message[i] = input; 
+}
+cout << "Decrypted message: " << message;
 }
 
+void Caesar()
+{
+char message[50],input;
+int i, key;
 
+cout << "Enter a message to encrypt: ";
+cin.getline(message, 50);
+cout << "Enter key: ";
+cin >> key;
+
+for(i=0;i<message[i];i++)
+{
+input = message[i];
+
+if( input>= 'a' &&  input<= 'z')
+input += key;
+
+if( input> 'z'){
+input -=26;
+}
+message[i] =input;
+}
+
+cout << "Encrypted message: " << message;
+   
+}
+
+void Subst()
+{
+char message[50], input;
+int i, key;
+string alpha = "abcdefghijklmnopqrstuvwxyz";
+string subst = "qwertyuiopasdfghjklzxcvbnm";
+
+cout << "Enter a message to encrypt: ";
+cin.getline(message, 50);
+
+cout << "Encrypted message: ";
+for(i=0;i<message[i];i++)
+{
+input = message[i];
+
+if( input>= 'a' && input <= 'z')
+{
+    //outputs the alpha of the cleartext
+    int alphaIndex;
+    for (int i = 0; i < 26; i++)
+    if ( input== alpha[i])
+    alphaIndex = i;
+    //outputs the alphaIndexed char
+    cout << subst[alphaIndex];
+}
+else
+cout << ' ';
+message[i] = input;
+}
+cout << endl;
+}
+int main()
+{
+char a;
+cout << "Welcome to the Encoder/Decoder!";
+cout << endl;
+cout << "Enter Your Choice: ";
+cout << endl;
+cout << "1: encrypt substitution";
+cout << endl;
+cout << "2: encrypt caesar";
+cout << endl;
+cout << "3: decrypt substitution";
+cout << endl;
+cout << "4: decrypt caesar";
+cout << endl;
+cin >> a;
+cin.ignore();
+switch (a) {
+case '1': {
+Subst();
+break;
+}
+case '2': {
+Caesar();
+break;
+}
+case '3': {
+unCaesar();
+break;
+}
+case '4': {
+unCaesar();
+break;
+}
+}
+return 0;
+}
