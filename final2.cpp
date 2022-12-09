@@ -13,7 +13,7 @@ cin.getline(message, 100);
 cout << "Enter key: ";
 cin >> key;
 
-for(i = 0; message[i] != '\0'; ++i){
+for(i=0;i<message[i];i++){
 input  = message[i];
 
 if( input >= 'a' &&  input <= 'z')
