@@ -19,7 +19,7 @@ int main()
     for (int i = 0; i < 26; i++)
         if (clearText[0] == alpha[i])
             alphaIndex = i;
-    cout << alphaIndex << endl;    
+    cout << alphaIndex << endl;
     cout << subst[alphaIndex] << endl;
 
     array <char, 50> encryptedData{};
@@ -37,7 +37,7 @@ int main()
     cout << alpha[caesarIndex] << endl;
     encryptedData[0] = alpha[caesarIndex];
     cout << encryptedData[0] << endl;
-    
+
 }
 
 
