@@ -1,34 +1,53 @@
+//Ian Cronizer 7.13 12/9/22
 #include <iostream>
 #include <iomanip>
 #include <array>
+#include <bits/stdc++.h>
+using namespace std;
 
-int main(int argc, char const *argv[])
+//sets size of array
+const size_t arraySize = 20;
+
+//main function
+int main()
 {
-    const size_t responseSize = 20;
-    const size_t frequencySize = 6;
+    //declarations
+    array<int, arraySize> data = {};
+    size_t j = 0;
+    int value;
 
-    int data;
-
-    const std::array<int, responseSize> responses = {data};
-
-    std::array<int, frequencySize> frequency = {};
-
-    while(data != -1)
+    //for loop that runs until data is sufficient
+    for (size_t i = 0; i < data.size(); ++i)
     {
-        std::cout << "enter data: ";
-        std::cin >> data;
+        //prompt
+        cout << "[" << i + 1 << ":20] Enter value between 10 and 100: ";
+        //input
+        cin >> value;
+
+        //checks validity of data entered
+        if ((value >= 10) && (value <= 100))
+        {
+                data[j++] = value;
+        }
+        //if invalid warn user and remain at increment
+        else
+        {
+            cout << "Warning please enter a number between 10 and 100: " << endl;
+            --i;
+        }
     }
-    for (size_t answer = 0; answer < responses.size(); ++answer)
-    {
-        ++frequency[responses[answer]];
-    }
 
-    std::cout << "Rating" << std::setw(17) << "Frequency" << std::endl;
-
-      for (size_t rating = 1; rating < frequency.size();++rating) {
-
-        std::cout << std::setw(6) << rating << std::setw(17) << frequency[rating] << std::endl;
-
-      }
-        return 0;
+//clever way to check dupes with c++ using hash tables
+map<int  ,int> hm;
+for(int i = 0; i < sizeof(data)/sizeof(data[0]); i++) 
+{ 
+hm.insert({data[i], i});  
+}
+//output
+cout << "Inputs without duplicates" << endl;
+for (auto const &pair: hm) {
+cout << pair.first << " ";
+}
+cout << endl;
+    return 0;
 }

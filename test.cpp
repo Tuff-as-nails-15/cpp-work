@@ -1,26 +1,54 @@
-//Ian Cronizer Final 12-5-22                                                    
-#include<iostream>                                                              
-#include<array>                                                                 
-using namespace std;                                                            
-                                                                                int main()
-{
-const size_t arraySize = 11;
-array <int, arraySize> test = { 0,0,0,0,0,2,4,8,3,2,1};
-cout << "Grade Distribution" << endl;
+//Ian Cronizer 7.13 12/9/22
+#include <iostream>
+#include <iomanip>
+#include <array>
+#include <bits/stdc++.h>
+using namespace std;
 
-for (int i = 0; i < arraySize; i++)
+//sets size of array
+const size_t arraySize = 20;
+
+//main function
+int main()
 {
-    cout << test[i];
-if (i == 0)
-cout << " 0-9:";
-else if (i == 10)
-cout << " 100:";
-else
-cout << i * 10 << "-" << (i * 10) + 9 << ":";
-for (int stars = 0; stars < test[i]; stars++)
-cout << "*";
+
+    //declarations
+    array<int, arraySize> myArray = {};
+    size_t j = 0;
+    int value;
+
+    //for loop that runs until data is sufficient
+    for (size_t i = 0; i < myArray.size(); ++i)
+    {
+        //prompt
+        cout << "[" << i + 1 << ":20] Enter value between 10 and 100: ";
+        //input
+        cin >> value;
+
+        //checks validity of data entered
+        if ((value >= 10) && (value <= 100))
+        {
+                myArray[j++] = value;
+        }
+        //if invalid warn user and remain at increment
+        else
+        {
+            cout << "Warning please enter a number between 10 and 100: " << endl;
+            --i;
+        }
+    }
+
+//clever way to check dupes with c++ using hash tables
+map<int  ,int> hm;
+for(int i = 0; i < sizeof(myArray)/sizeof(myArray[0]); i++) 
+{ 
+hm.insert({myArray[i], i});  
+}
+//output
+cout << "Inputs without duplicates" << endl;
+for (auto const &pair: hm) {
+cout << pair.first << " ";
+}
 cout << endl;
-}//end for
- //int x = static_cast<int>(salary) / 100;
- // ++arrSalaries[(x < 10 ? x : 10)];
-}//end main
+    return 0;
+}

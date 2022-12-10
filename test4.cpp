@@ -1,46 +1,69 @@
-//Ian Cronizer Final 12-5-22
-#include<iostream>
-#include<array>
+// C++ approach
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+int ar[] = { 1, 1, 7, 4, 1, 1, 1 };
+map<int  ,int> hm;
+for(int i = 0; i < sizeof(ar)/sizeof(ar[0]); i++) { // total = O(n*logn)
+hm.insert({ar[i], i});  //  time complexity for insert() in map O(logn)
+}
+cout <<"[";
+for (auto const &pair: hm) {
+cout << pair.first << ", ";
+}
+cout <<"]";
+}
+//Ian Cronizer 7.13 12/9/22
+#include <iostream>
+#include <iomanip>
+#include <array>
+#include <bits/stdc++.h>
 using namespace std;
 
+//sets size of array
+const size_t arraySize = 20;
+
+//main function
 int main()
 {
-    //Test
-    std::string clearText = "this is a test";
-    //std::cout << clearText[6] << std::endl;
-    //std::cout << clearText.length() << std::endl;
 
-    //Alphabets for encryption
-    std::string alpha = "abcdefghijklmnopqrstuvwxyz";
-    std::string subst = "qwertyuiopasdfghjklzxcvbnm";
+    //declarations
+    array<int, arraySize> myArray = {};
+    size_t j = 0;
+    int value;
 
-    //alphaIndex test
-    int alphaIndex;
-    for (int i = 0; i < 26; i++)
-        if (clearText[0] == alpha[i])
-            alphaIndex = i;
-    //cout << alphaIndex << endl;    
-    //cout << subst[alphaIndex] << endl;
-
-    array <char, 50> encryptedData{};
-    encryptedData[0] = subst[alphaIndex];
-    //cout << encryptedData[0] << endl;
-
-    int caesarIndex;
-    int shift = 3;
-    for (int i = 0; i < 26; i++)
-        if (clearText[0] == alpha[i])
-    alphaIndex = i;
-    //cout << alphaIndex << endl;
-    //caesarIndex = alphaIndex + shift;
-    caesarIndex = (alphaIndex + shift) % 26;
-    //cout << alpha[caesarIndex] << endl;
-    encryptedData[0] = alpha[caesarIndex];
-    cout << encryptedData[0] << endl;
-   
-    //for(clearText.length()){ 
-    for(int i = 0; i <=  clearText.length(); i++)
+    //for loop that runs until data is sufficient
+    for (size_t i = 0; i < myArray.size(); ++i)
     {
-    cout << clearText[i]; 
+        //prompt
+        cout << "[" << i + 1 << ":20] Enter value between 10 and 100: ";
+        //input
+        cin >> value;
+
+        //checks validity of data entered
+        if ((value >= 10) && (value <= 100))
+        {
+                myArray[j++] = value;
+        }
+        //if invalid warn user and remain at increment
+        else
+        {
+            cout << "Warning please enter a number between 10 and 100: " << endl;
+            --i;
+        }
     }
+
+//clever way to check dupes with c++ using hash tables
+map<int  ,int> hm;
+for(int i = 0; i < sizeof(myArray)/sizeof(myArray[0]); i++)
+{
+hm.insert({myArray[i], i});
 }
+//output
+cout << "Inputs without duplicates" << endl;
+for (auto const &pair: hm) {
+cout << pair.first << " ";
+}
+cout << endl;
+    return 0;
+}             
